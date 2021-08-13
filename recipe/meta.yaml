@@ -37,12 +37,9 @@ requirements:
     - networkx
     - notebook
     - nbformat
-    - numpydoc
-    - pandas
     - papermill
     - parso
     - ploomber-scaffold
-    - pyarrow
     - pydantic
     - pyflakes
     - pygments
@@ -65,7 +62,7 @@ test:
 
 about:
   home: https://github.com/ploomber/ploomber
-  summary: A convention over configuration workflow orchestrator. Develop locally (Jupyter or your favorite editor), deploy to Airflow or Kubernetes.
+  summary: Write maintainable, production-ready pipelines using Jupyter or your favorite text editor. Develop locally, deploy to the cloud.
   license: Apache-2.0
   license_file: LICENSE
   doc_url: https://ploomber.readthedocs.io/
