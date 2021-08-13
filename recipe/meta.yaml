@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.12.3" %}
+{% set version = "0.12.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5e685b775570ef0016f3bdda329580bcfe1ea6a28eb44b9594967807c482d040
+  sha256: 34409c2e188367c7822855192e2e2f789a66447124bca1506b43c24b0c234b2d
 
 build:
   number: 0
@@ -37,12 +37,9 @@ requirements:
     - networkx
     - notebook
     - nbformat
-    - numpydoc
-    - pandas
     - papermill
     - parso
     - ploomber-scaffold
-    - pyarrow
     - pydantic
     - pyflakes
     - pygments
@@ -65,7 +62,7 @@ test:
 
 about:
   home: https://github.com/ploomber/ploomber
-  summary: A convention over configuration workflow orchestrator. Develop locally (Jupyter or your favorite editor), deploy to Airflow or Kubernetes.
+  summary: Write maintainable, production-ready pipelines using Jupyter or your favorite text editor. Develop locally, deploy to the cloud.
   license: Apache-2.0
   license_file: LICENSE
   doc_url: https://ploomber.readthedocs.io/
