@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ploomber-feedstock/blob/master/LICENSE.txt)
 
-Summary: A convention over configuration workflow orchestrator. Develop locally (Jupyter or your favorite editor), deploy to Airflow or Kubernetes.
+Summary: Write maintainable, production-ready pipelines using Jupyter or your favorite text editor. Develop locally, deploy to the cloud.
 
 Development: https://github.com/ploomber/ploomber
 
