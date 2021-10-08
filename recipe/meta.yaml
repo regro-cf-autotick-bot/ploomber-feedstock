@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.13" %}
+{% set version = "0.13.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b111382d5fa6bede19bee2e10724e82ba9353dbb2635715a9805344983cfd4a3
+  sha256: 8d1d0fa9f216fc7bb0c1d21449aa5174ef8c2c19764fa574bacacd2b879722a4
 
 build:
   number: 0
