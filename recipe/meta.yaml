@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.14.4" %}
+{% set version = "0.14.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2fda5eeb3ff6fd48c777ec5c230fdc6533964838fadfd9aedb56f38758273cd5
+  sha256: 0359b78c25c874b99332d1d5740ffc957f3b2b6bb558a82f51c53bfc350be266
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - importlib_resources
     - ipdb
     - ipykernel >=1.5.2
-    - ipython
+    - ipython <8
     - jinja2
     - jupyter_client >=5.3.1
     - jupytext
