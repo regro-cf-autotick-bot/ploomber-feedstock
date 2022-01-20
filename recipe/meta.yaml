@@ -28,7 +28,7 @@ requirements:
     - importlib_resources
     - ipdb
     - ipykernel >=1.5.2
-    - ipython<8
+    - ipython <8
     - jinja2
     - jupyter_client >=5.3.1
     - jupytext
