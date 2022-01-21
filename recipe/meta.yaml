@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.14.5" %}
+{% set version = "0.14.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0359b78c25c874b99332d1d5740ffc957f3b2b6bb558a82f51c53bfc350be266
+  sha256: 7c657708ad8fcffe3ea76264cffeaa8c583eba1adbd05e16e442a81c37eac231
 
 build:
   number: 0
@@ -50,6 +50,7 @@ requirements:
     - tabulate
     - tqdm
     - posthog
+    - distro
 
 test:
   imports:
