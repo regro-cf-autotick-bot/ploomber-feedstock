@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.16.2" %}
+{% set version = "0.16.3" %}
 
 
 package:
@@ -8,13 +8,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a40214760bda52d12e393ce37773534ac2b64f07023d16771c4d44ff09dd2485
+  sha256: e7f36b390b0565ecaf1c83e5c0c6a1435feef6aaf147ef6ff7ceed5cfdac0ada
 
 build:
   number: 0
   noarch: python
   entry_points:
-    - ploomber=ploomber.cli.cli:cmd_router
+    - ploomber=ploomber_cli.cli:cmd_router
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -55,7 +55,7 @@ requirements:
 test:
   imports:
     - ploomber
-    - ploomber.cli
+    - ploomber_cli
   commands:
     - pip check
     - ploomber --help
