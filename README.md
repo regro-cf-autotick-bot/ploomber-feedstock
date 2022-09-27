@@ -148,5 +148,4 @@ Feedstock Maintainers
 =====================
 
 * [@edublancas](https://github.com/edublancas/)
-* [@rdmolony](https://github.com/rdmolony/)
 
