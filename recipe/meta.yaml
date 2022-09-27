@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.20" %}
+{% set version = "0.21" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be5f3af9b089c79a212384f165cd32911bef623bc9e6f351219a7fa9d7ed745f
+  sha256: 291fb3d25e47f9d4d6fd101d21d7aec324263da258acf0cf5a6d017f17ccb882
 
 build:
   number: 0
@@ -20,29 +20,31 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
+    - ploomber-scaffold >=0.3
+    - ploomber-engine >=0.0.8
+    - ploomber-core >=0.0.5
+    - python >=3.7
     - autopep8
     - click
     - humanize
     - importlib_resources
     - ipdb
     - ipykernel >=1.5.2
-    - ipython <8
-    - jinja2 <3.1
+    - ipython
+    - jinja2
     - jupyter_client >=5.3.1
     - jupytext
     - mistune
     - nbconvert >=5.6.0
-    - networkx
+    - networkx >=2.5
     - nbformat
     - papermill
     - parso
-    - ploomber-scaffold
     - pydantic
     - pyflakes
     - pygments
-    - python >=3.6
     - pyyaml
     - sqlalchemy
     - sqlparse
@@ -50,7 +52,7 @@ requirements:
     - tqdm
     - posthog
     - distro
-    - ploomber-engine
+
 
 test:
   imports:
