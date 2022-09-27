@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.19.9" %}
+{% set version = "0.20" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c6590751387c62bd138ea8440557ba6f0ed7681de9b7e1a8a29077297a1e1905
+  sha256: be5f3af9b089c79a212384f165cd32911bef623bc9e6f351219a7fa9d7ed745f
 
 build:
   number: 0
@@ -35,7 +35,6 @@ requirements:
     - mistune
     - nbconvert >=5.6.0
     - networkx
-    - notebook
     - nbformat
     - papermill
     - parso
@@ -51,6 +50,7 @@ requirements:
     - tqdm
     - posthog
     - distro
+    - ploomber-engine
 
 test:
   imports:
@@ -73,4 +73,3 @@ about:
 extra:
   recipe-maintainers:
     - edublancas
-    - rdmolony
