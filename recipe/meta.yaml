@@ -1,5 +1,5 @@
 {% set name = "ploomber" %}
-{% set version = "0.23.0" %}
+{% set version = "0.23.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ca15164f6ab69637ad174fc00107da58e4ce579f6552f0caeeac168df6d7b56
+  sha256: ced23ad903a70ffe64b961bddf034930d9beba6d501f9a9bf6160c2cd09c91d3
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - pip
     - python >=3.7
   run:
-    - pycodestyle <2.11.0
+    - pycodestyle
     - notebook <7
     - ploomber-scaffold >=0.3
     - ploomber-engine >=0.0.8
