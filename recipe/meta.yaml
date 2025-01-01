@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: d9944feb87759ceec15f210d469559b43151afa65ddd88960bed3e62cb9758f2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - ploomber=ploomber_cli.cli:cmd_router
@@ -20,14 +20,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
   run:
     - pycodestyle
     - notebook <7
     - ploomber-scaffold >=0.3
     - ploomber-engine >=0.0.8
     - ploomber-core >=0.0.11
-    - python >=3.7
+    - python >={{ python_min }}
     - autopep8
     - click
     - humanize
@@ -65,6 +65,7 @@ test:
     - ploomber --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ploomber/ploomber
